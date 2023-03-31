@@ -19,4 +19,24 @@
     <servlet-name>svlTesteConexao</servlet-name>
     <url-pattern>/svlTesteConexao</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>svlCadastrar</display-name>
+    <servlet-name>svlCadastrar</servlet-name>
+    <servlet-class>svlCadastrar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>svlCadastrar</servlet-name>
+    <url-pattern>/svlCadastrar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>svlPesquisar</display-name>
+    <servlet-name>svlPesquisar</servlet-name>
+    <servlet-class>svlPesquisar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>svlPesquisar</servlet-name>
+    <url-pattern>/svlPesquisar</url-pattern>
+  </servlet-mapping>
 </web-app>
