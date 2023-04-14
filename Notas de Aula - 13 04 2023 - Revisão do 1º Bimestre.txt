@@ -1,0 +1,92 @@
+Notas de Aula 13/04/2023 - Revisão do 1º Bimestre
+
+1. Arquitetura Cliente Servidor
+    É a delegação e distribuição dos papeis que cada uma dos lados deve se responsábilizar pela execução.
+
+	Cliente: responsável pela parte que garante a interação Homem x Máquina (Computador). Aplicação Front-end. De renderização de telas e entradas e saídas de dados. Utilizamos ling. de programação que são possiveis de serem interpretadas lado client, tal como, HTML, CSS e JavaScript.
+	
+	Servidor: responsável pelas regras, pelas execuções que exigem validações complexas, acesso a dados, interfaceamento com outras aplicações, é o que podemos generalizar como o back-end da sua aplicação. A sua implementação exige ling. de programação tais como Java, C++, Delphi, .Net, e etc... Que tem como fundamental características serem compiladas.
+
+2. Middleware
+	Definidos como uma camada de software, cuja responsabilidade é a de prover meios de integração.
+	Arquiteturas distintas exigem muitas vezes meios de compartilhamento e até mesmo de acesso.
+	
+	Gerar as capacidade de Portabilidade e Interoperabiliade.
+	
+	A) Camadas de apresentação - Sistemas utilizam interfaces de diversas aplicações distintas para acessar processos ou informações.
+	
+	B) Funcionalidades - Um sistema completa o outro: compartilhamento de métodos e objetos (distribuídos)
+	
+	C) Dados - Sistemas que compartilham informações heterogêneas mas que têm objetivos comuns
+
+
+3. Persistência de Dados em Arquitetura Cliente Servidor
+   São delegação adequada do papel de persistência e manipulação dos dados ao server (lado back-end).
+   Podemos utilizar conexão via
+	- ODBC
+	- Driver Nativo
+	- Servidor de Licenças e Distribuição
+	- Conexão Nativa JDBC
+	
+   Em uma estrutura de cliente servidor dividimos em alguns papeis:
+	- O Cliente
+	- O Servidor de Aplicação (regras de negócio)
+	- O SGBD - Persistência de Dados
+
+4. Protocolos de Comunicação:
+	4.1 TCP – IP (RFC 1180)
+	4.2 HTTP (RFC 2616)
+	Definem os padrões de comunicação, bem como apresentam os critérios, métodos e até mesmo regras, para que uma aplicação cliente-servidor possa se comunicar com outras aplicações.
+	
+	Baseado em RFC - Request For Comments estabelecidos pela comunidade com o intuito de determinar a forma padrão de comunicação. A construção das aplicações seguem esses padrões.
+
+5. Problemas/Serviços requeridos pelas aplicações Cliente Servidor
+	Quando existe perdas de confiabiliade, de capacidade de comunicação ou de tempo mínimo de resposta, torna-se inviável a implementação de arquitetura cliente-servidor.
+
+	I. Transferência de dados confiável
+		Não pode haver perda de dados durante a transmissão
+		Exemplos: transferência 
+		
+	II. Banda passante disponível
+		Algumas aplicações necessitam de uma banda passante mínima para haver consistência dos dados no receptor
+		Exemplos: aplicações multimídia
+
+	III. Garantia de tempo
+		Algumas aplicações requerem um tempo máximo de atraso para a transmissão dos dados
+		Exemplos: aplicações em tempo real, jogos multiusuários 
+
+	
+6. Principio de Programação Orientada a Objetos
+	6.1 Classes, Métodos e Atributos
+	
+		Classe definem um modelo conceitual, uma forma abstrata de representar algo no formato computacional. Definição de um tipo, tal qual, um produto, um cliente, um objeto e si.
+		
+		Atributo é a definição de uma caracteristica, uma propriedade valorada. Exemplo, o código do produto, a descrição do produto, o cnpj do fornecedor... enfim, valores de uma classe.
+		
+		Métodos são como funções, a capacidade executiva que os objetos desta classe tem. No caso de produto, incluir, pesquisar, excluir....
+		
+	6.2 Herança
+		Capacidade que uma classe tem de receber por derivação atributos ou métodos (ou as duas coisas ao mesmo tempo) de uma classe ancestral.
+		Pode ocorre como extensão (É um) ou composição de implementação (Tem um).
+		
+	6.3 Classes Abstratas e Interfaces
+		Similares ao conceito de classe, porém, sua função é a de definir padrões, ou contratos de construção para outras classes.
+		
+	6.4 Polimorfismo
+	Polimorfismo é o conceito de que métodos podem ter variações de sua implementação aplicando a técnica programática de sobrecarga de métodos.
+		1. Sobrecarga de Métodos pode ser dados por	
+			A) Tipo de Argumentos (int)
+			B) Número de argumentos (int, String)
+			C) Ordem dos argumentos (String, int)
+	
+7. Webservices
+	Aplicações com disponibilidade para execução remota via web. São métodos que permitem a execução fora do seu contexto (seu mini mundo) por meio de protocolo de comunicação HTTP (get, post, put e delete, por exemplo).
+	
+	Gerar portabilidade, capacidade de alcançar e executar atividade que pertencem a outros aplicativos, estruturas ou mesmo contextos de atividade.
+
+8. Processamento de Transações
+	8.1 Processos Concorrentes
+	8.2 Paralelismo
+	8.3 Sincronismo
+	8.4 Efeito Deadlock
+
